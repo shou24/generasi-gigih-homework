@@ -1,0 +1,11 @@
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13pt;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+    cursor: default;
+    margin-top: 15px;
+    margin-left: 180px;
+    line-height: 0;
+  }

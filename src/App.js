@@ -1,17 +1,23 @@
 import './App.css';
-import data from './data';
+import Button from './component/button';
+import Image from './component/image/image';
+import Artist from './component/detail/artist/artist';
+import Album from './component/detail/album/album';
+import Tittle from './component/detail/tittle/tittle';
 
 function App() {
   return (
     <div className="App">
       <div className="track">
         <ul>
-          <li className="track-image"><img src={data.album.images[0].url} alt="Album" /></li>
+          <li className="track-image">
+            <Image />
+          </li>
           <li className="detail">
-            <h1 id="track-artist">{data.artists[0].name}</h1>
-            <h4 id="track-album">{data.album.name}</h4>
-            <h2 id="track-tittle">{data.name}</h2>
-            <button id="track-button">select</button>
+            <Artist />
+            <Album />
+            <Tittle />
+            <Button />
           </li>
         </ul>
       </div>
